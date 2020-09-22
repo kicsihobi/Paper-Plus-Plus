@@ -2,7 +2,7 @@ body, html {
   padding-top:2.5em;
   margin:0;
   background-color:#fafafa;
-  font-size: 13pt;
+  font-size: 2vw;
   font-family: "Open Sans";
 }
 
@@ -13,7 +13,7 @@ h2{
 }
 
 h3{
-  font-weight:300;
+  font-weight:500;
   font-size:1em;
   margin: 0em;
 }
@@ -77,7 +77,7 @@ header {
 }
 
 .pic{
-  height: 6em;
+  height: 8em;
   transition: .3s;
 }
 
@@ -115,15 +115,15 @@ header p {
   margin-bottom:1em;
 
   background-color:white;
-  width:60%;
+  width:100%;
 
   padding:0.5em 0 0.5em 0;
 
-  border-top: 1px solid #dddddd;
+  /*border-top: 1px solid #dddddd;
   border-left: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
   border-bottom: 3px solid #dddddd;
-  border-radius: 3px;
+  border-radius: 3px;*/
 
   text-align: center;
 }
@@ -184,7 +184,7 @@ body > div > article > div > section:last-child {
 }
 
 .content-cat p {
-  font-size:0.55em;
+  font-size:0.65em;
   font-weight:600;
 
   margin-bottom:0;
@@ -204,7 +204,7 @@ body > div > article > div > section:last-child {
   margin:0;
   margin-top:0.15em;
 
-  width:85%;
+  width:95%;
   margin-left:1.5em;
 }
 
@@ -217,6 +217,15 @@ body > div > article > div > section:last-child {
 
   display:inline-block;
 
+}
+
+.content-text ul li ul {
+  width:100%;
+}
+
+.content-text ul li ul li {
+  font-size:1em;
+  list-style-type: circle;
 }
 
 .content-text ul li:first-child {
@@ -263,14 +272,40 @@ div.content-text.work-listing.education-listing > p:nth-child(2) {
 
 .education-listing > .heading {
   font-weight:600;
-
   margin-top:0.75em;
   margin-left:2em;
+  margin-bottom:2em;
+}
+
+.education-listing > .heading > span {
+  font-size: 0.9em;
+}
+
+.education-listing > .heading > i {
+  font-weight:400;
 }
 
 .education-listing > .highlight {
   margin-left:3.25em;
 }
+
+.content-text.education-listing ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.content-text.education-listing ul li {
+  display:list-item;
+  font-weight: inherit;
+  color: #424242;
+  margin-left: 0.5em;
+}
+
+.content-text.education-listing ul li:first-child {
+  width:100%;
+  font-weight: inherit;
+}
+
 
 .highlight {
   transition: border .33s ease-in;
@@ -312,7 +347,7 @@ a{
 }
 
 .fa{
-  color: #000;
+  /* color: #000; */
 }
 
 .network{
@@ -323,9 +358,10 @@ a{
 
 @media(max-width:1400px) {
   .paper {
-    width:80%;
+    width:100%;
   }
 
+/*
   .content-cat{
     padding-left:2%;
   }
@@ -333,4 +369,7 @@ a{
   .content-wrapper{
     padding-right: 2%;
   }
+*/
 }
+
+.pagebreak { page-break-before: always; padding-top:50px; } /* page-break-after works, as well */
