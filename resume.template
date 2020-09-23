@@ -500,7 +500,7 @@
 					{{#if resume.skills.length}}
 						<section class="content">
 							<div class="row">
-								<div class="content-cat">
+								<div class="content-cat big-text">
 									<h3>Skills</h3>
 								</div>
 								<div class="content-text skills-listing">
@@ -511,7 +511,7 @@
                       </p>
                       <ul>
                       {{#each skills}}
-                        <li>{{name}} ({{level}})</li>
+                        <li>{{name}}{{#if level}} ({{level}}){{/if}}{{#if keywords.length}}: {{#each keywords}}{{#if @first}}{{this}}{{else}}, {{this}}{{/if}}{{/each}}{{/if}}</li>
                       {{/each}}
                       </ul>
                     {{else}}
@@ -630,7 +630,7 @@
 										<span class="name">
 										{{#if name}}
 											<strong>
-												{{name}}:
+												{{name}}{{#if keywords.length}}:{{/if}}
 											</strong>
 										{{/if}}
 										</span>

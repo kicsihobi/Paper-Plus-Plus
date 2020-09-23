@@ -219,6 +219,21 @@ body > div > article > div > section:last-child {
 
 }
 
+.content-text.skills-listing ul {
+  margin-left: 3.5em;
+}
+
+.content-text.skills-listing ul li {
+  display: list-item;
+  width:95%;
+}
+
+.content-text.skills-listing ul li:first-child {
+  width:95%;
+  color: inherit;
+  font-weight:inherit;
+}
+
 .content-text ul li ul {
   width:100%;
 }
